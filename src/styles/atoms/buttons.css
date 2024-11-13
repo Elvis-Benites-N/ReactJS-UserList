@@ -1,0 +1,35 @@
+.btn-select {
+    background-color: #f7f7f7;
+    color: #808080;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%230b5ed7' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 16px 12px;
+    
+    
+    &:focus {
+        box-shadow: 0 0 0 4px #b4babf;
+        border: none;
+    }
+
+}
+
+.dropdown-item{
+    font-size: 12.2px;
+    border-radius: 0;
+    padding-left:32px ;
+    text-transform: uppercase;
+}
+
+.btn-light{
+    background-color:#f5f6f6!important;
+
+}
+
+.p5-11{
+    padding:5px 11px;
+}

@@ -1,0 +1,19 @@
+.filter-container {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.filter-enter {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.filter-exit {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
