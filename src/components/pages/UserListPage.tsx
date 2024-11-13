@@ -29,12 +29,10 @@ const UserListPage: React.FC = () => {
         users,
         totalUsers,
         sortConfig,
-        loading,
         itemsPerPage,
         showEditModal,
         setShowEditModal,
         userToEdit,
-        setUserToEdit,
         setUsers,
         paginatedUsers
     } = useUserList();
