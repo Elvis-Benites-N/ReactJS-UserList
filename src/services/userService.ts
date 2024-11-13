@@ -22,7 +22,7 @@ export const fetchUsers = async (
       },
     });
 
-    console.log(`Ordenando por: ${sortField}, Orden: ${order}`);
+    // console.log(`Ordenando por: ${sortField}, Orden: ${order}`);
     return { users: mapUsers(response.data.users), total: response.data.total };
   } catch (error) {
     console.error("Error fetching users:", error);

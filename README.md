@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# ReactJs-UserList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de prueba técnica para el puesto de **Desarrollador Frontend ReactJS** en UPCH. El proyecto consiste en replicar un prototipo HTML en ReactJS utilizando las mejores prácticas de desarrollo web. Además, se utiliza una API pública para poblar una tabla con usuarios y aplicar filtros de búsqueda.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El objetivo de esta prueba técnica fue implementar una interfaz en ReactJS que consuma la API pública de usuarios y permita:
 
-## Expanding the ESLint configuration
+- Mostrar una lista de usuarios en una tabla.
+- Implementar un sistema de búsqueda para filtrar los usuarios por múltiples campos.
+- Integrar funcionalidades como la edición, eliminación y paginación de los registros.
+- Utilizar GitHub Pages para el despliegue del proyecto.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **ReactJS**: Framework de JavaScript para construir la interfaz de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipado estático.
+- **Axios**: Para hacer solicitudes HTTP a la API pública.
+- **SweetAlert**: Para mostrar alertas de confirmación y error.
+- **GitHub Pages**: Para desplegar la aplicación en línea.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Si deseas ejecutar este proyecto localmente, sigue los siguientes pasos:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clona este repositorio:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+    ```bash
+    git clone https://github.com/Elvis-Benites-N/ReactJS-UserList.git
+    ```
+
+2. Accede al directorio del proyecto:
+
+    ```bash
+    cd ReactJS-UserList
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4. Inicia la aplicación:
+
+    ```bash
+    npm run dev
+    ```
+
+## Despliegue
+
+La aplicación está desplegada en GitHub Pages. Puedes acceder a ella en el siguiente enlace:
+
+[Enlace al proyecto desplegado](https://elvis-benites-n.github.io/ReactJS-UserList/#/users)
+
+## Funcionalidades
+
+- **Tabla de usuarios**: Muestra una lista de usuarios obtenidos de la API pública.
+- **Búsqueda**: Permite buscar usuarios por nombre, edad, entre otros campos.
+- **Edición**: Permite editar un solo usuario a la vez.
+- **Eliminación**: Permite eliminar múltiples usuarios seleccionados.
+- **Paginación**: Muestra los usuarios de 10 en 10 por página usando lazy loading.
+
