@@ -6,7 +6,7 @@ interface FilterToggleProps {
     toggleFilters: () => void;
 }
 
-const FilterToggle: React.FC<FilterToggleProps> = ({ showFilters, toggleFilters }) => (
+const FilterToggle: React.FC<FilterToggleProps> = ({ toggleFilters }) => (
     <Button
         onClick={toggleFilters}
         label="Filtros"
